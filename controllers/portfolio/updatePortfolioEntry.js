@@ -6,7 +6,9 @@ export const updatePortfolioEntry = async (req, res, next) => {
     const { crypto } = req.params;
     const userId = req.user._id;
     const { buyingPrice, quantity } = req.body;
-    validatePortfolioInput({ buyingPrice, quantity });
+
+  
+    validatePortfolioInput({crypto,  buyingPrice, quantity });
 
     const portfolio = await Portfolio.findOne({ user: userId });
 

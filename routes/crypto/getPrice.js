@@ -33,7 +33,7 @@ const router = express.Router();
  *                     price:
  *                       type: number
  */
-router.get('/:symbol/price', getCryptocurrencyPrice);
+router.get('/:symbol', getCryptocurrencyPrice);
 
 export default router;
 

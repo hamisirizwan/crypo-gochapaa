@@ -1,4 +1,4 @@
-version: '3.8' # Use the latest version for improved features
+version: '3.8'
 services:
   app:
     build: . 
